@@ -1,0 +1,85 @@
+
+/* inspired by: https://dev.to/dcodeyt/creating-beautiful-html-tables-with-css-428l */
+
+.termTable{
+    margin-top: 10rem;
+    
+}
+
+.termTable table{
+    width: 100%;
+   border-radius: 10px;
+   /* overflow hidden ensures that the radius works correctly  */
+   overflow: hidden; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    min-width: 400px;
+}
+
+
+.termTable table, th, td{
+   
+    border-collapse: collapse;
+    
+}
+
+
+.termTable thead tr{
+    background-color: #007598;
+    color: #ffffff;
+    text-align: left;
+}
+
+.termTable tbody tr{
+    border-bottom: 1px solid #dddddd;
+}
+
+.termTable tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+
+.termTable tbody tr:last-of-type{
+    border-bottom: 2px solid #009879;
+}
+
+ .termTable th, td{
+    padding: 12px 15px;
+    
+
+ }
+
+ 
+
+ .termTable th{
+     text-align: left;
+ }
+
+
+ /* for the buttons  */
+
+ .actions{
+    
+    margin-top: 15px;
+    
+    
+ }
+ .actions button {
+    font: inherit;
+    cursor: pointer;
+    color: #313638;
+    font-weight: 700;
+    border: none;
+    background-color: #29bebe;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    max-height: 55px;
+  }
+  
+  .actions button:hover,
+  .actions button:active {
+    background-color: #29bebe;
+  }
+
+  .studyBtn{
+      margin-left: 150px;
+  }
+
