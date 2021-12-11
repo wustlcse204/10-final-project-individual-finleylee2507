@@ -1,38 +1,54 @@
-.card{
-    background-color: #ffffff;
-    border-radius: 6px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    height:60vh;
-    margin-top: 8rem;
+.cardScene{
+   
     text-align: center;
     position:relative;
    
 }
 
-.previousBtn,.nextBtn{
-    /* position: relative;
-    color: rgb(19, 17, 17);
-    font-size: 81px;
-    font-weight: bold;
-    display: inline-block;
-    line-height: 0px;
-    padding: 30px 6px;
-    cursor: pointer;
-    top:85%;  */
-    font-size: 81px;
-    font-weight: bold;
-    line-height: 0px;
-    padding: 30px 6px;
-    cursor: pointer;
-}
-.previousBtn{
+.card{
    
-    /* right:13rem; */
+   height:100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    height:60vh;
+    margin-top: 6rem;
 }
 
-.nextBtn{
-    /* left:20rem; */
+.cardFace{
+position:absolute;
+height:100%;
+width:100%;
+backface-visibility: hidden;
+-webkit-backface-visibility: hidden;
 }
+
+.card.is-flipped{
+    transform:rotateY(180deg);
+}
+.cardFaceFront{
+background-color: #ffffff;
+}
+
+.cardFaceBack{
+    background-color: #ffffff;
+    transform: rotateY(180deg);
+}
+
+
+.previousBtn,.nextBtn{
+  
+    font-size: 81px;
+    font-weight: bold;
+    line-height: 0px;
+    padding: 30px 6px;
+    cursor: pointer;
+}
+
 
 .previousBtn:hover{
     opacity: 0.5;
@@ -42,19 +58,7 @@
 }
 
 .flipBtn{
-    /* position:relative;
-    top:30rem;
-    right:3rem;
-
-    font: inherit;
-    cursor: pointer;
-    color: #313638;
-    font-weight: 700;
-    border: none;
-    background-color: #29bebe;
-    padding: 0.5rem 1.5rem;
-    border-radius: 4px;
-    max-height: 55px; */
+   
     font: inherit;
     cursor: pointer;
     color: #313638;
@@ -94,6 +98,6 @@
     align-items: center;
     justify-content:space-evenly;
     position:relative;
-    top:85%;
+    top:2rem;
 }
 
