@@ -1,16 +1,19 @@
 import React from 'react';
 import FlashcardForm from '../components/StudySets/FlashcardForm';
 import { useHistory, useLocation } from 'react-router'; //used to manipulate browser history 
-
+import { CurrentSetContext } from '../storage/current-set-context';
+import { useContext } from 'react';
 
 const EditSetPage = () => {
     const history=useHistory();
-    const { state } = useLocation();
-    const list=state.list;
-    const title=state.title;
-    const description=state.description;
-    const image=state.image;
-    const id=state.id;
+   
+
+    const currentSetCtx=useContext(CurrentSetContext);
+    const list=currentSetCtx.currentList;
+    const title=currentSetCtx.currentTitle;
+    const description=currentSetCtx.currentDescription;
+    const image=currentSetCtx.currentImage;
+    const id=currentSetCtx.currentId;
 
     const editMeetupHandler=(setData,id)=>{
       

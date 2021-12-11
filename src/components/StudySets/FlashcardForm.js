@@ -37,7 +37,7 @@ const FlashcardForm = (props) => {
         setInputList([...inputList, { term: "", definition: "" }]);
     };
 
-
+    
     //handle form submit (save button click)
     const submitHandler = (e) => {
         e.preventDefault();

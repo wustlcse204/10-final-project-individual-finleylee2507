@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import classes from './MainNavigation.module.css'
 import { useContext } from 'react'
-import { FavoritesContext } from '../../store/favorites-context'
+import { FavoritesContext } from '../../storage/favorites-context'
 
 const MainNavigation = () => {
     const favoritesCtx=useContext(FavoritesContext)

@@ -1,4 +1,5 @@
 import { createContext,useState } from "react";
+import usePersistedState from "./customHooks"; 
 
 //initializes a react context 
 //source: https://reactjs.org/docs/context.html 
@@ -6,30 +7,30 @@ import { createContext,useState } from "react";
 export const FavoritesContext = createContext({
     favorites: [],
     totalFavorites: 0,
-    addFavorite:(favoriteMeetup)=>{},
-    removeFavorite:(meetupId)=>{},
-    itemIsFavorite:(meetupId)=>{}
+    addFavorite:(favoriteSet)=>{},
+    removeFavorite:(setId)=>{},
+    itemIsFavorite:(setId)=>{}
 });//returns a react component 
 
 //main react wrapper class 
 export const FavoritesContextProvider=(props) =>{
-    const [userFavorites,setUserFavorites]=useState([])
+    const [userFavorites,setUserFavorites]=usePersistedState("favorites",[]);
 
-    const addFavoriteHandler =(favoriteMeetup)=>{
+    const addFavoriteHandler =(favoriteSet)=>{
         setUserFavorites((prevUserFavorites)=>{ //BETTER WAY OF UPDATING STATES (appending on previous)
-            return prevUserFavorites.concat(favoriteMeetup);
+            return prevUserFavorites.concat(favoriteSet);
         })
     }
 
-    const removeFavoriteHandler=(meetupId)=>{
+    const removeFavoriteHandler=(setId)=>{
         setUserFavorites(prevUserFavorites=>{
-            return prevUserFavorites.filter(meetup=>meetup.id!==meetupId);
+            return prevUserFavorites.filter(set=>set.id!==setId);
         })
     }
 
-    const itemIsFavoriteHandler=(meetupId)=>{
+    const itemIsFavoriteHandler=(setId)=>{
         //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some
-        return userFavorites.some(meetup=>meetup.id===meetupId)
+        return userFavorites.some(set=>set.id===setId)
     }
 
     const context={

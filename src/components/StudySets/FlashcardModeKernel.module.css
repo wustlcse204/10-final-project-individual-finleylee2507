@@ -5,4 +5,95 @@
     height:60vh;
     margin-top: 8rem;
     text-align: center;
+    position:relative;
+   
 }
+
+.previousBtn,.nextBtn{
+    /* position: relative;
+    color: rgb(19, 17, 17);
+    font-size: 81px;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 0px;
+    padding: 30px 6px;
+    cursor: pointer;
+    top:85%;  */
+    font-size: 81px;
+    font-weight: bold;
+    line-height: 0px;
+    padding: 30px 6px;
+    cursor: pointer;
+}
+.previousBtn{
+   
+    /* right:13rem; */
+}
+
+.nextBtn{
+    /* left:20rem; */
+}
+
+.previousBtn:hover{
+    opacity: 0.5;
+}
+.nextBtn:hover{
+    opacity: 0.5;
+}
+
+.flipBtn{
+    /* position:relative;
+    top:30rem;
+    right:3rem;
+
+    font: inherit;
+    cursor: pointer;
+    color: #313638;
+    font-weight: 700;
+    border: none;
+    background-color: #29bebe;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    max-height: 55px; */
+    font: inherit;
+    cursor: pointer;
+    color: #313638;
+    font-weight: 700;
+    border: none;
+    background-color: #29bebe;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    max-height: 55px;
+}
+
+.flipBtn:hover, .flipBtn:active{
+    background-color: #17a7a7;
+}
+
+
+
+.displayArea{
+    position: absolute;
+    font-size: 45px;
+    font-weight: 500;
+    width:75%;
+    height:75%;
+    left: -webkit-calc((100% - 75%)/2);
+   display: table;
+   top:3rem;
+}
+
+/* citation:http://jsfiddle.net/zuul/JrhQh/ */
+.displayArea p{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.actionCenter{
+    display:flex;
+    align-items: center;
+    justify-content:space-evenly;
+    position:relative;
+    top:85%;
+}
+

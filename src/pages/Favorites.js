@@ -1,7 +1,7 @@
 import React from 'react'
 import { useContext } from 'react'
 
-import { FavoritesContext } from '../store/favorites-context'
+import { FavoritesContext } from '../storage/favorites-context'
 import StudySetList from '../components/StudySets/StudySetList'
 
 //note the elements are not permernant, meaning that if we refresh that page, they're gone. 
