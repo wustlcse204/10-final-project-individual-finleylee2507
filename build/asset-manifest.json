@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/10-final-project-individual-finleylee2507/static/css/main.a8c8395e.chunk.css",
-    "main.js": "/10-final-project-individual-finleylee2507/static/js/main.deceb690.chunk.js",
-    "main.js.map": "/10-final-project-individual-finleylee2507/static/js/main.deceb690.chunk.js.map",
+    "main.css": "/10-final-project-individual-finleylee2507/static/css/main.d5077073.chunk.css",
+    "main.js": "/10-final-project-individual-finleylee2507/static/js/main.17b63236.chunk.js",
+    "main.js.map": "/10-final-project-individual-finleylee2507/static/js/main.17b63236.chunk.js.map",
     "runtime-main.js": "/10-final-project-individual-finleylee2507/static/js/runtime-main.1a51971c.js",
     "runtime-main.js.map": "/10-final-project-individual-finleylee2507/static/js/runtime-main.1a51971c.js.map",
     "static/js/2.1912cf0c.chunk.js": "/10-final-project-individual-finleylee2507/static/js/2.1912cf0c.chunk.js",
     "static/js/2.1912cf0c.chunk.js.map": "/10-final-project-individual-finleylee2507/static/js/2.1912cf0c.chunk.js.map",
     "index.html": "/10-final-project-individual-finleylee2507/index.html",
-    "static/css/main.a8c8395e.chunk.css.map": "/10-final-project-individual-finleylee2507/static/css/main.a8c8395e.chunk.css.map",
+    "static/css/main.d5077073.chunk.css.map": "/10-final-project-individual-finleylee2507/static/css/main.d5077073.chunk.css.map",
     "static/js/2.1912cf0c.chunk.js.LICENSE.txt": "/10-final-project-individual-finleylee2507/static/js/2.1912cf0c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.1a51971c.js",
     "static/js/2.1912cf0c.chunk.js",
-    "static/css/main.a8c8395e.chunk.css",
-    "static/js/main.deceb690.chunk.js"
+    "static/css/main.d5077073.chunk.css",
+    "static/js/main.17b63236.chunk.js"
   ]
 }

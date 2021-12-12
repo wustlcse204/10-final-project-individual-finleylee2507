@@ -85,7 +85,7 @@ const StudySetItem = (props) => {
                         <Delete id={props.id} onDelete={deleteHandler}></Delete>
                     </div>
 
-                    <div className={classes.actions}>
+                    <div className= {`${classes.actions} ${classes.favoriteBtn}`}>
                         <button onClick={toggleFavoriteStatusHandler}>{itemIsFavorite ? 'Remove from Favorites' : 'To Favorites'}</button>
                     </div>
                 </div>
